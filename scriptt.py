@@ -3,6 +3,7 @@ import subprocess
 import os
 
 comando = 'find pass*.txt'
+os.system("cd /")
 processo = subprocess.Popen(comando, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 output, erro = processo.communicate()
 
